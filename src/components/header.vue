@@ -1,10 +1,10 @@
 <template>
     <nav>
-    <h1>Welcome to Javascript Blog App</h1>
+    <h1>Javascript Blog App</h1>
         <ul>
-            <li><router-link to="/" exact>Home</router-link></li>
-            <li><router-link to="/list" exact>All Blogs</router-link></li>
-            <li><router-link to="/about" exact>About</router-link></li>
+            <li><router-link to="/" exact inline >Home</router-link></li>
+            <li><router-link to="/list" exact inline >All Blogs</router-link></li>
+            <li><router-link to="/about" exact inline >About</router-link></li>
         </ul>
     </nav>
 </template>
