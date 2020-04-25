@@ -1,6 +1,6 @@
 <template>
 
-<div id="blog"> 
+<div class="table-responsive-sm"> 
 
     <form v-if="!submitted">
 
@@ -9,7 +9,7 @@
             <br>
 
 
-          <table align='center'><tr>
+          <table class="table"><tr>
             <td><b-form-checkbox value="Angular.Js" v-model="blog.categories" class="text-white" inline>Angular.JS</b-form-checkbox></td>
             <td><b-form-checkbox value="Express.JS" v-model="blog.categories" class="text-white" inline>Express.JS</b-form-checkbox></td>
             <td><b-form-checkbox value="Vanilla.JS" v-model="blog.categories" class="text-white" inline>Vanilla.JS</b-form-checkbox></td></tr>
@@ -91,9 +91,7 @@ h3{
     text-align: center;
   }
 td{
-  padding: 0px 15px 0px 15px;
+  padding: 0px 10px 0px 10px;
 }
-table{
-  max-width:fit-content;
-  }
+
 </style>

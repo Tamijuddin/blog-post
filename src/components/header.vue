@@ -25,7 +25,7 @@ a{
     border-radius: 10px;
 }
 nav{
-    background:darkgray;
+    background:#444;
     padding: 14px 0;
     margin-bottom: 40px;
 }
@@ -34,7 +34,7 @@ nav{
     color: #444;
 }*/
 h1{
-    color:black;
+    color:white;
     font-weight: bold;
     text-align: center;
 }
