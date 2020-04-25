@@ -1,7 +1,7 @@
 <template>
   <div id="blogList">
     <h2 style="color:white">List of All Blogs</h2>
-    <b-form-input v-model="search" placeholder="Search Blogs"></b-form-input>
+    <b-form-input v-model="search" placeholder="Search Blogs..." required></b-form-input>
     <br>
       <div v-for="blog in filteredBlogs" v-bind:key="blog.id">
         <b-card border-variant="success" header-tag="header" footer-tag="footer">
@@ -61,7 +61,7 @@ export default {
 <style scoped>
 
 #blogList{
-  max-width:90%;
+  max-width:fit-content;
   margin: 0px auto;
   text-align: left;
 }

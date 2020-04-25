@@ -2,8 +2,6 @@
 <div>
   <b-card
     overlay
-    img-src="https://i.picsum.photos/id/0/5616/3744.jpg"
-    img-alt="Card Image"
     text-variant="white"
   >
     <b-card-text>
