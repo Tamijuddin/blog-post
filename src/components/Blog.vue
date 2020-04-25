@@ -1,18 +1,26 @@
 <template>
+
 <div id="blog"> 
+
     <form v-if="!submitted">
+
             <label style="color:white">Blog Title:</label>
             <b-form-input v-model.lazy="blog.title"  placeholder="Enter title..." required></b-form-input>
             <br>
-          <div class="choices">
-            <b-form-checkbox value="Angular.Js" v-model="blog.categories" class="text-white" inline>Angular.JS</b-form-checkbox>
-            <b-form-checkbox value="React.Js" v-model="blog.categories" class="text-white" inline>React.JS</b-form-checkbox>
-            <b-form-checkbox value="Vue.Js" v-model="blog.categories" class="text-white" inline>Vue.JS</b-form-checkbox>
-            <b-form-checkbox value="Node.JS" v-model="blog.categories" class="text-white" inline>Node.JS</b-form-checkbox>
-            <b-form-checkbox value="Express.JS" v-model="blog.categories" class="text-white" inline>Express.JS</b-form-checkbox>
-            <b-form-checkbox value="Vanilla.JS" v-model="blog.categories" class="text-white" inline>Vanilla.JS</b-form-checkbox>
-          </div><br>
+
+
+          <table align='center'><tr>
+            <td><b-form-checkbox value="Angular.Js" v-model="blog.categories" class="text-white" inline>Angular.JS</b-form-checkbox></td>
+            <td><b-form-checkbox value="Express.JS" v-model="blog.categories" class="text-white" inline>Express.JS</b-form-checkbox></td>
+            <td><b-form-checkbox value="Vanilla.JS" v-model="blog.categories" class="text-white" inline>Vanilla.JS</b-form-checkbox></td></tr>
+            <tr><td><b-form-checkbox value="React.Js" v-model="blog.categories" class="text-white" inline>React.JS</b-form-checkbox></td>
+            <td><b-form-checkbox value="Vue.Js" v-model="blog.categories" class="text-white" inline>Vue.JS</b-form-checkbox></td>
+            <td><b-form-checkbox value="Node.JS" v-model="blog.categories" class="text-white" inline>Node.JS</b-form-checkbox></td></tr>
+            </table><br>
+
+
             <label style="color:white">Blog Content:</label>
+
               <b-form-textarea v-model.lazy.trim="blog.content" placeholder="Enter something..."></b-form-textarea><br>
               <label style="color:white">Blog Author:</label>
               <b-form-input type="text" v-model.lazy="blog.author"  placeholder="Enter Author name..." required></b-form-input><br>
@@ -79,30 +87,13 @@ h2{
 h3{
     text-align: center;
   }
-.choices{
-  text-align: center;
-  }
   .posted{
     text-align: center;
   }
-/*
-#blog{
-    margin: 20px auto;
-    max-width: 900px;
-    background-color: lightgray;
-    padding: 5px;
-    text-align: left;
+td{
+  padding: 0px 15px 0px 15px;
 }
-
-#preview{
-    padding: 10px 10px;
-    border: 1px dotted #ccc;
-    margin: 20px 10px;
-    text-align: left;
-    background-color:bisque;
-    }
-}*/
-
-
-
+table{
+  max-width:fit-content;
+  }
 </style>

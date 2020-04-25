@@ -1,11 +1,13 @@
 <template>
     <nav>
     <h1>Javascript Blog App</h1>
-        <ul>
-            <li><router-link to="/" exact inline >Home</router-link></li>
-            <li><router-link to="/list" exact inline >All Blogs</router-link></li>
-            <li><router-link to="/about" exact inline >About</router-link></li>
-        </ul>
+    <table align='center'>
+        <tr>
+            <td><router-link to="/"  inline exact>Home</router-link></td>
+            <td><router-link to="/list"  inline exact>All Blogs</router-link></td>
+            <td><router-link to="/about"  inline exact>About</router-link></td>
+        </tr>
+    </table>
     </nav>
 </template>
 
@@ -16,15 +18,6 @@ export default {
 </script>
 
 <style scoped>
-ul{
-    list-style-type: none;
-    text-align: center;
-    margin: 0;
-}
-li{
-    display: inline-block;
-    margin: 0 10px;
-}
 a{
     color: #fff;
     text-decoration: none;
@@ -32,16 +25,17 @@ a{
     border-radius: 10px;
 }
 nav{
-    background: #444;
+    background:darkgray;
     padding: 14px 0;
     margin-bottom: 40px;
 }
-.router-link-active{
+/*.router-link-exact-active{
     background: #eee;
     color: #444;
-}
+}*/
 h1{
-    color:white;
+    color:black;
+    font-weight: bold;
     text-align: center;
 }
 </style>
