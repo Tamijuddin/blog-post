@@ -1,6 +1,6 @@
 <template>
 
-<div class="table-responsive-sm"> 
+<div id="blog"> 
 
     <form v-if="!submitted">
 
@@ -8,15 +8,17 @@
             <b-form-input v-model.lazy="blog.title"  placeholder="Enter title..." required></b-form-input>
             <br>
 
+          <div>
+            <ul style="list-style-type:none" inline>
+            <li><b-form-checkbox value="Angular.Js" v-model="blog.categories" class="text-white" inline>Angular.JS</b-form-checkbox></li>
+            <li><b-form-checkbox value="React.Js" v-model="blog.categories" class="text-white" inline>React.JS</b-form-checkbox></li>
+            <li><b-form-checkbox value="Vue.Js" v-model="blog.categories" class="text-white" inline>Vue.JS</b-form-checkbox></li>
+            <li><b-form-checkbox value="Express.JS" v-model="blog.categories" class="text-white" inline>Express.JS</b-form-checkbox></li>
+            <li><b-form-checkbox value="Node.JS" v-model="blog.categories" class="text-white" inline>Node.JS</b-form-checkbox></li>
+            <li><b-form-checkbox value="Vanilla.JS" v-model="blog.categories" class="text-white" inline>Vanilla.JS</b-form-checkbox></li>
+            </ul>
+          </div><br>
 
-          <table class="table"><tr>
-            <td><b-form-checkbox value="Angular.Js" v-model="blog.categories" class="text-white" inline>Angular.JS</b-form-checkbox></td>
-            <td><b-form-checkbox value="Express.JS" v-model="blog.categories" class="text-white" inline>Express.JS</b-form-checkbox></td>
-            <td><b-form-checkbox value="Vanilla.JS" v-model="blog.categories" class="text-white" inline>Vanilla.JS</b-form-checkbox></td></tr>
-            <tr><td><b-form-checkbox value="React.Js" v-model="blog.categories" class="text-white" inline>React.JS</b-form-checkbox></td>
-            <td><b-form-checkbox value="Vue.Js" v-model="blog.categories" class="text-white" inline>Vue.JS</b-form-checkbox></td>
-            <td><b-form-checkbox value="Node.JS" v-model="blog.categories" class="text-white" inline>Node.JS</b-form-checkbox></td></tr>
-            </table><br>
 
 
             <label style="color:white">Blog Content:</label>
@@ -90,8 +92,5 @@ h3{
   .posted{
     text-align: center;
   }
-td{
-  padding: 0px 10px 0px 10px;
-}
 
 </style>
