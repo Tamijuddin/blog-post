@@ -14,8 +14,6 @@ export default {
   name: 'App',
   components: {
     'app-header':header
-    /*Blog,
-    #BlogList*/
   }
 }
 </script>
